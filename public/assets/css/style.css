@@ -1,19 +1,29 @@
-body {
+html {
+  background-color: black;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+
+.jumbotron {
   background-image: url(../img/burger3.jpg);
   background-size: cover;
-  padding: 0;
-  margin: 0;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 5px 3px 5px rgb(255, 0, 234);
+  color: black;
 }
 
 h1 {
   text-align: center;
-  font-size: 80px;
   color: rgb(255, 0, 43);
 }
 
 img {
   height: auto;
-  width: 300px;
+  width: 400px;
   text-align: center;
 }
 
@@ -30,7 +40,9 @@ img {
   color: black !important;
 }
 
-form, h2 {
+form, h2, label {
+  font-weight: bold;
+  font-size: 30px;
   display: block;
   text-align: center;
 }
@@ -44,11 +56,3 @@ li {
   color: black !important;
 }
 
-.label {
-  font-weight: bold;
-}
-.container {
-  background: lemonchiffon !important;
-  color: black !important;
-
-}
