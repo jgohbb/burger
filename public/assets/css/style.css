@@ -1,26 +1,54 @@
-* {
-  background: blueviolet;
+body {
+  background-image: url(../img/burger3.jpg);
+  background-size: cover;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
   text-align: center;
   font-size: 80px;
+  color: rgb(255, 0, 43);
 }
 
 img {
-  display: block;
-  height: 197px;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
+  height: auto;
+  width: 300px;
+  text-align: center;
 }
 
 #notEaten {
   display: block;
+  text-align: center;
+
 }
 
 #eaten {
   display: block;
+  text-align: center;
+  background: lemonchiffon !important;
+  color: black !important;
+}
+
+form, h2 {
+  display: block;
+  text-align: center;
 }
 
 
+li {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  list-style: none;
+  color: black !important;
+}
+
+.label {
+  font-weight: bold;
+}
+.container {
+  background: lemonchiffon !important;
+  color: black !important;
+
+}
