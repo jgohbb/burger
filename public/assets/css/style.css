@@ -7,6 +7,7 @@ html {
 .jumbotron {
   background-image: url(../img/burger3.jpg);
   background-size: cover;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.2), 0px 40px 40px rgba(0,0,0,0.5);
 }
 
 .title {
@@ -16,9 +17,25 @@ html {
   color: black;
 }
 
-h1 {
+h1, h2 {
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 2px 1px 2px rgb(255, 0, 234);
+  display: block;
   text-align: center;
-  color: rgb(255, 0, 43);
+}
+
+button {
+  background-color: chartreuse;
+  font-weight: bold;
+}
+
+#submitBtn {
+  border-radius: 10px;
+}
+
+#burger-name{
+  box-shadow: 6px 6px 10px 4px black;
 }
 
 img {
@@ -36,7 +53,6 @@ img {
 #eaten {
   display: block;
   text-align: center;
-  background: lemonchiffon !important;
   color: black !important;
 }
 
