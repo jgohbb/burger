@@ -13,7 +13,7 @@ The home page is pretty straight forward, just add your favorite burger and clic
 
 Every now and then when you feel like having the same burger you had eaten, just click the "YUMMY!" button to bring it back so you don't need to re-type your favorites. Happy munching.
 
-![home](./assets/img/home.png)
+![home](./public/assets/img/home.png)
 
 ## Technologies Used
 
