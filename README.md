@@ -7,21 +7,13 @@ The web page survey app is assessible on the attached link:
 https://###/
 
 ## Instructions
-The home page ...
+To start, you will need your MySql password added to the connection.js including all the necessary npm application listed below.
 
-![home](assets/images/homepage.png)
+The home page is pretty straight forward, just add your favorite burger and click the "Add Burger" button. This will be posted to the "Burgers Not Eaten" section and once you feel peckish just "EAT IT!". Your burger choice will then be posted to the "Burgers Devoured" column.
 
-Once you enter the home ...
+Every now and then when you feel like having the same burger you had eaten, just click the "YUMMY!" button to bring it back so you don't need to re-type your favorites. Happy munching.
 
-![survey](assets/images/survey.png)
-
-Select...
-
-![results](assets/images/results.png)
-
-Eat ...
-
-![api](assets/images/api.png)
+![home](./assets/img/home.png)
 
 ## Technologies Used
 

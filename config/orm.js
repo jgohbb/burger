@@ -12,16 +12,19 @@ function printQuestionMarks(num) {
 
 function objToSql(ob) {
     var arr = [];
-  
+   
     for (var key in ob) {
+      var value = ob[key];
 
-      if (ob.hasOwnProperty(key)) {
-        // if string with spaces, add quotations (cheese burger => 'cheese burger')
-        arr.push(key + "=" + ob[key]);
-        
-        // e.g. {burger: 'cheese burger'} => ["burger='cheese burger'"]
+       if (Object.hasOwnProperty.call(ob, key)) {
+
+        // add quotations (cheese burger => 'cheese burger')
+        if (typeof value === "string" && value.indexOf(" ") >= 0) {
+          value = "'" + value + "'";
+        }
+
         // e.g. {devour: true} => ["devour=true"]
-
+        arr.push(key + "=" + value);
       }
     }
   
@@ -29,7 +32,6 @@ function objToSql(ob) {
     return arr.toString();
 }
 
-// Object for all our SQL statement functions.
 var orm = {
     selectAll: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
@@ -72,6 +74,7 @@ var orm = {
         cb(result);
       });
     },
+    
     // delete: function(tables, condition, cb) {
     //   var queryString = "DELETE FROM " + tables + " WHERE " + condition;
   

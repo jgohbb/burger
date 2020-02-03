@@ -9,7 +9,7 @@
     <ul>
       {{#each burgers}}
         {{#unless devoured}}
-          {{> burgers/burger-block devoured=true}}
+          {{burger_name}}{{> burgers/burger-block devoured=true}}
         {{/unless}}
       {{/each}}
     </ul>
@@ -20,7 +20,7 @@
     <ul>
       {{#each burgers}}
         {{#if devoured}}
-          {{> burgers/burger-block devoured=false}}
+          {{burger_name}}{{> burgers/burger-block devoured=false}}
         {{/if}}
       {{/each}}
     </ul>
@@ -31,13 +31,13 @@
 <hr>
 <form class="create-form">
     <div class="form-group">
-      <label for="bu">Burger Name:</label>
-      <input type="text" id="burger-name" name="name">
+      <label for="bu" id="name-label">Burger Name:</label>
+      <input type="text" id="burger-name" name="name" placeholder="enter burger">
     </div>
 
    <button type="submit" id="submitBtn">Add Burger</button>
 </form>
 
-<footer class="footer text-center fixed-bottom">
+<footer class="footer text-center">
   <p><a href="https://github.com/jgohbb/burger" target="_blank"> GitHub repo </a></p>
 </footer>

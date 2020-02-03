@@ -17,6 +17,10 @@ html {
   color: black;
 }
 
+#name-label {
+  padding: 0 20px 0 0;
+}
+
 h1, h2 {
   font-weight: bold;
   font-size: 30px;
@@ -28,15 +32,18 @@ h1, h2 {
 button {
   background-color: chartreuse;
   font-weight: bold;
+  box-shadow: 3px 2px 3px black;
 }
 
 #submitBtn {
   border-radius: 10px;
   margin-top: 25px;
+  box-shadow: 3px 2px 3px black;
 }
 
 #burger-name{
   box-shadow: 6px 6px 10px 4px black;
+  padding-left: 20px;
 }
 
 img {
@@ -64,8 +71,13 @@ form, h2, label {
   text-align: center;
 }
 
+ul {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 li {
+  font-size: 18px;
   padding: 5px;
   margin: 5px;
   text-align: center;
@@ -73,3 +85,6 @@ li {
   color: black !important;
 }
 
+footer {
+  padding-top: 30px;
+}
