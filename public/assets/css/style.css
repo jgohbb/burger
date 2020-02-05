@@ -29,6 +29,10 @@ h1, h2 {
   text-align: center;
 }
 
+.title-add {
+  margin-top: 20px;
+}
+
 button {
   background-color: chartreuse;
   font-weight: bold;
