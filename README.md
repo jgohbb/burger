@@ -7,7 +7,7 @@ The web page app is assessible on the attached link:
 https://eat-da-burger2020.herokuapp.com/
 
 ## Instructions
-To start, you will need your MySql password added to the connection.js including all the necessary npm application listed below.
+To start just click link above, but if access via node server you may need your MySql password added to the connection.js including all the necessary npm application listed below.
 
 The home page is pretty straight forward, just add your favorite burger and click the "Add Burger" button. This will be posted to the "Burgers Not Eaten" section and once you feel peckish just "EAT IT!". Your burger choice will then be posted to the "Burgers Devoured" column.
 
